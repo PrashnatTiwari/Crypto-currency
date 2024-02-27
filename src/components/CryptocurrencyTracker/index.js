@@ -1,6 +1,6 @@
 import './index.css'
 
-import CryptoCurrenciesList from '../CryptocurrencyItem'
+import CryptoCurrenciesList from '../CryptocurrenciesList'
 
 const CryptocurrencyTracker = () => {
   return (
