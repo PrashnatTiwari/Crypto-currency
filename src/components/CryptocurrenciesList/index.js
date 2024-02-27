@@ -38,10 +38,10 @@ class CryptoCurrenciesList extends Component {
     return (
       <div className="card-container">
         <div className="top-container">
-          <h1>Coin Type</h1>
+          <p className="top-container-heading">Coin Type</p>
           <div className="flex-container-2">
-            <p>USD</p>
-            <p>EURO</p>
+            <p className="top-container-heading">USD</p>
+            <p className="top-container-heading>EURO</p>
           </div>
         </div>
         {isLoading ? (
