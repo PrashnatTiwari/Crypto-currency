@@ -1,18 +1,28 @@
 .item-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+  list-style-type: none;
 }
 
 .flex-container {
   display: flex;
 }
 
+.flex-container-4 {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+}
+
 .currency-logo {
   height: 20px;
   width: 20px;
+  margin-left: 20px;
 }
 
 .currency-name {
   font-size: 20px;
   font-family: Roboto;
+   margin-left: 20px;
 }
