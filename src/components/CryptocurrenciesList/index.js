@@ -7,6 +7,7 @@ import './index.css'
 class CryptoCurrenciesList extends Component {
   state = {
     cryptoCurrencyList: [],
+    isLoading: true,
   }
 
   componentDidMount() {
@@ -28,11 +29,12 @@ class CryptoCurrenciesList extends Component {
 
     this.setState({
       cryptoCurrencyList: updatedData,
+      isLoading: false,
     })
   }
 
   render() {
-    const {cryptoCurrencyList} = this.state
+    const {cryptoCurrencyList, isLoading} = this.state
     return (
       <div className="card-container">
         <div className="top-container">
@@ -42,9 +44,16 @@ class CryptoCurrenciesList extends Component {
             <p>EURO</p>
           </div>
         </div>
-        {cryptoCurrencyList.map(eachData => (
-          <CryptocurrencyItem itemDetails={eachData} key={eachData.id} />
-        ))}
+        {isLoading ? (
+          <div data-testid="loader">
+            <Loader type="Rings" color="#ffffff" height={80} width={80} />
+          </div>
+        ) : (
+          cryptoCurrencyList.map(eachData => (
+            <CryptocurrencyItem itemDetails={eachData} key={eachData.id} />
+          ))
+        )}
+  }
       </div>
     )
   }
