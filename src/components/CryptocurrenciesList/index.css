@@ -1,17 +1,30 @@
 .card-container {
-  height: 30vh;
+  height: 35vh;
   width: 80vw;
-  border: 1px solid #00e7ff;
+  border: 5px solid #00e7ff;
+  color: #ffffff;
+  font-family: Roboto;
+  border-radius: 10px;
 }
 
 .top-container {
   background-color: #092e33;
   height: 10vh;
-  width: 80vw;
+  width: 79vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .flex-container-2 {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 26vw;
+  height: 10vh;
+}
+.top-container-heading {
+  font-weight: bold;
+  font-size: 25px;
 }
